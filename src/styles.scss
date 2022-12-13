@@ -1,1 +1,38 @@
 /* You can add global styles to this file, and also import other style files */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body{
+    height: 100%;
+    overflow: hidden;
+}
+
+.form-container{
+    height: 500px;
+    min-width: 80%;
+}
+
+header{
+    flex: 0 0 50px;
+}
+
+.dot{
+    background-color: #7272fc;
+    height: 28px;
+    width: 28px;
+    color: white;
+}
+
+.active{
+    border-bottom: 2px solid orange;
+    transition: 0.4s all;
+    
+    .dot{
+        background-color: lighten(#7272fc, 20);
+        color: #7272fc;
+        transition: 0.4s all;
+    }
+}
