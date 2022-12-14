@@ -3,7 +3,7 @@ import { RouterModule, Routes } from '@angular/router';
 
 const routes: Routes = [
   { path:'', redirectTo:'demo', pathMatch:'full'},
-  { path: 'demo', loadChildren: () => import('./demo/demo.module').then(m => m.DemoModule) }
+  { path: 'demo', loadChildren: () => import('./demo-form/demo-form.module').then(m => m.DemoFormModule) }
 ];
 
 @NgModule({

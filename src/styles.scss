@@ -12,27 +12,28 @@ html, body{
 
 .form-container{
     height: 500px;
-    min-width: 80%;
-}
-
-header{
-    flex: 0 0 50px;
 }
 
 .dot{
-    background-color: #7272fc;
+    background-color: #e1e1e1;
     height: 28px;
     width: 28px;
-    color: white;
+}
+
+span{
+    color: silver;
+}
+
+.cursor-pointer{
+    cursor: pointer;
 }
 
 .active{
-    border-bottom: 2px solid orange;
-    transition: 0.4s all;
-    
     .dot{
-        background-color: lighten(#7272fc, 20);
-        color: #7272fc;
-        transition: 0.4s all;
+        background-color: #5533eb;
+    }
+
+    span{
+        color: black;
     }
 }

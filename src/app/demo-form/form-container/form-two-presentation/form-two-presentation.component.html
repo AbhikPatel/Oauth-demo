@@ -1,0 +1,23 @@
+<form class="row px-5 pt-3" [formGroup]="twoGroup">
+    <div class="mb-3">
+        <label for="mail" class="form-label"> Email </label>
+        <input type="email" name="mail" id="mail" class="form-control" formControlName="mail">
+    </div>
+    <div class="mb-3 col-6">
+        <label for="birth" class="form-label"> Date Of Birth </label>
+        <input type="date" name="birth" id="birth" class="form-control" formControlName="birth">
+    </div>
+    <div class="mb-3 col-6">
+        <label for="gender" class="form-label"> Gender </label>
+        <div class="d-flex align-items-center">
+            <input type="radio" name="gender" id="male" value="Male" class="form-check-input" formControlName="gender">
+            <label for="male" class="form-label cursor-pointer mb-0 mx-4"> Male </label>
+            <input type="radio" name="gender" id="female" value="Female" class="form-check-input" formControlName="gender">
+            <label for="female" class="form-label cursor-pointer mb-0 mx-4"> Female </label>
+        </div>
+    </div>
+    <div class="d-flex justify-content-end gap-4">
+        <button class="btn btn-danger" type="button" (click)="onPre()"> Previous </button>
+        <button class="btn btn-warning" type="button" (click)="onNext()"> Next </button>
+    </div>
+</form>
