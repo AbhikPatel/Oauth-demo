@@ -1,0 +1,28 @@
+<div class="container p-5">
+    <h1 class="text-secondary"> Fill up your details! </h1>
+    <span> Lets gets started by creating an school account. Please ensure all details are filled correctly </span>
+    <div class="shadow-sm d-flex flex-column my-3 border rounded-2">
+        <div class="form-header border-bottom d-flex">
+            <span class="d-flex align-items-center d-block py-2 px-3" 
+                *ngFor="let data of formHeader"
+                [ngClass]="{ 'border-current' : formNavigation() === data.count,  
+                'border-done' : formNavigation() > data.count}">
+
+                <span class="dot current d-flex align-items-center justify-content-center 
+                rounded-circle me-2" *ngIf="formNavigation() === data.count">{{data.count}}</span>
+
+                <span class="dot done d-flex align-items-center justify-content-center 
+                rounded-circle me-2" *ngIf="formNavigation() > data.count">✓</span>
+                
+                <span class="dot remain d-flex align-items-center justify-content-center 
+                rounded-circle me-2" *ngIf="formNavigation() < data.count">{{data.count}}</span>
+
+
+                <span class="fw-semibold" [ngClass]="{'text-muted' : formNavigation() < data.count}"> {{data.formText}} </span>
+            </span>
+        </div>
+        <div class="flex-grow-1">
+            <router-outlet></router-outlet>
+        </div>
+    </div>
+</div>

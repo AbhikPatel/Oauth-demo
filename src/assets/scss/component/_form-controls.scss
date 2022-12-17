@@ -1,0 +1,30 @@
+.form-container{
+    height: 500px;
+}
+
+.dot{
+    width: 28px;
+    height: 28px;
+    color: white;
+}
+
+.current{
+    background-color: $secondary;
+}
+
+.done{
+    background-color: $success;
+}
+
+.remain{
+    background-color: #e7e7e7;
+    color: #a1a1a1;
+}
+
+.border-current{
+    border-bottom: 2px solid $primary;
+}
+
+.border-done{
+    border-bottom: 2px solid $success;
+}

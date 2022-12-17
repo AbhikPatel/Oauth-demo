@@ -1,0 +1,58 @@
+<form class="d-flex flex-column justify-content-between">
+    <div class="form-container p-4">
+        <div class="border-bottom">
+            <div class="row my-3">
+                <h5 class="text-secondary mb-4"> Principle Details </h5>
+                <div class="col-12">
+                    <div class="mb-3">
+                        <label for="principleName" class="form-label"> Principle Name</label>
+                        <input type="text" name="principleName" id="principleName" class="form-control"
+                            placeholder="Enter Principle Name">
+                    </div>
+                </div>
+                <div class="col-6">
+                    <div class="mb-3">
+                        <label for="principleMail" class="form-label"> Email Address</label>
+                        <input type="email" name="principleMail" id="principleMail" class="form-control"
+                            placeholder="Enter Email Address">
+                    </div>
+                </div>
+                <div class="col-6">
+                    <div class="mb-3">
+                        <label for="principleNumber" class="form-label"> Phone Number</label>
+                        <input type="text" name="principleNumber" id="principleNumber" class="form-control"
+                            placeholder="Enter Phone Number">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row my-3">
+            <h5 class="text-secondary mb-4"> Teacher Representive Details(for day-to-day communications) </h5>
+            <div class="col-12">
+                <div class="mb-3">
+                    <label for="teacherName" class="form-label"> Teacher Name</label>
+                    <input type="text" name="teacherName" id="teacherName" class="form-control"
+                        placeholder="Enter Principle Name">
+                </div>
+            </div>
+            <div class="col-6">
+                <div class="mb-3">
+                    <label for="teacherMail" class="form-label"> Email Address</label>
+                    <input type="email" name="teacherMail" id="teacherMail" class="form-control"
+                        placeholder="Enter Email Address">
+                </div>
+            </div>
+            <div class="col-6">
+                <div class="mb-3">
+                    <label for="teacherNumber" class="form-label"> Phone Number</label>
+                    <input type="text" name="teacherNumber" id="teacherNumber" class="form-control"
+                        placeholder="Enter Phone Number">
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="d-flex justify-content-between p-3 border-top">
+        <button class="btn btn-sm rounded-pill border-secondary px-4 text-secondary fw-semibold" (click)="onPre()"> Previous </button>
+        <button class="btn btn-primary btn-sm rounded-pill px-4 text-white fw-semibold" (click)="onNext()"> Next </button>
+    </div>
+</form>

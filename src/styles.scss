@@ -1,39 +1,13 @@
 /* You can add global styles to this file, and also import other style files */
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
+// Project base and component style import
+@import '~/src/assets/scss/base/index';
 
-html, body{
-    height: 100%;
-    overflow: hidden;
-}
+// Project Specific Components
+@import '~/src/assets/scss/component/index';
 
-.form-container{
-    height: 500px;
-}
+// Now other style import
+@import '~/src/assets/scss/layout/index';
 
-.dot{
-    background-color: #e1e1e1;
-    height: 28px;
-    width: 28px;
-}
+@import '~/src/assets/scss/utilities/index';
 
-span{
-    color: silver;
-}
-
-.cursor-pointer{
-    cursor: pointer;
-}
-
-.active{
-    .dot{
-        background-color: #5533eb;
-    }
-
-    span{
-        color: black;
-    }
-}
+@import '~/src/assets/scss/vendors/index';

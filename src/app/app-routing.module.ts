@@ -2,8 +2,8 @@ import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 
 const routes: Routes = [
-  { path:'', redirectTo:'demo', pathMatch:'full'},
-  { path: 'demo', loadChildren: () => import('./demo-form/demo-form.module').then(m => m.DemoFormModule) }
+  { path: 'stepper', loadChildren: () => import('./stepper/stepper.module').then(m => m.StepperModule) },
+  { path:'', redirectTo:'stepper', pathMatch:'full'},
 ];
 
 @NgModule({

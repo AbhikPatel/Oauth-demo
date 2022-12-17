@@ -1,0 +1,136 @@
+<form class="d-flex flex-column justify-content-between">
+    <div class="form-container overflow-hidden">
+        <div class="overflow-auto p-4 h-100">
+
+            <!-- Grade  -->
+            <div class="border-bottom">
+                <div class="row my-4">
+                    <h5 class="text-secondary mb-4"> 1. Select your grade/classes and define total no. of studentsin
+                        each grade? </h5>
+                    <div class="col-4">
+                        <div class="border rounded-2 shadow-sm">
+                            <div class="d-flex p-2">
+                                <input type="checkbox" name="grade" id="grade-1" class="form-check-input">
+                                <label for="grade-1" class="form-check-label ps-2 m-0 w-100"> Grade 1 - 5 </label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-4">
+                        <div class="border rounded-2 shadow-sm">
+                            <div class="d-flex p-2">
+                                <input type="checkbox" name="grade" id="grade-2" class="form-check-input">
+                                <label for="grade-2" class="form-check-label ps-2 m-0 w-100"> Grade 6 - 8 </label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-4">
+                        <div class="border rounded-2 shadow-sm">
+                            <div class="d-flex p-2">
+                                <input type="checkbox" name="grade" id="grade-3" class="form-check-input">
+                                <label for="grade-3" class="form-check-label ps-2 m-0 w-100"> Grade 9 - 12 </label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Average  -->
+            <div class="border-bottom">
+                <div class="row my-4">
+                    <h5 class="text-secondary mb-4"> 2. What is the average distance of travel of students attending
+                        your school? </h5>
+                    <div class="col-4">
+                        <div class="border rounded-2 shadow-sm mb-3">
+                            <div class="d-flex p-2">
+                                <input type="radio" name="average" id="average-1" class="form-check-input">
+                                <label for="average-1" class="form-check-label ps-2 m-0 w-100"> Less than 2 km </label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-4">
+                        <div class="border rounded-2 shadow-sm mb-3">
+                            <div class="d-flex p-2">
+                                <input type="radio" name="average" id="average-2" class="form-check-input">
+                                <label for="average-2" class="form-check-label ps-2 m-0 w-100"> 2 - 5 km </label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-4">
+                        <div class="border rounded-2 shadow-sm mb-3">
+                            <div class="d-flex p-2">
+                                <input type="radio" name="average" id="average-3" class="form-check-input">
+                                <label for="average-3" class="form-check-label ps-2 m-0 w-100"> 5 - 10 km </label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-4">
+                        <div class="border rounded-2 shadow-sm mb-3">
+                            <div class="d-flex p-2">
+                                <input type="radio" name="average" id="average-4" class="form-check-input">
+                                <label for="average-4" class="form-check-label ps-2 m-0 w-100"> Greater then 10 km
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Transport  -->
+            <div class="border-bottom">
+                <div class="row my-4">
+                    <h5 class="text-secondary mb-4"> 3. Which modes of transport is used by your school students for
+                        commute?
+                        Please mention approximate percentage of each mode of transport. </h5>
+                    <div class="col-4">
+                        <div class="border rounded-2 shadow-sm mb-3">
+                            <div class="d-flex p-2">
+                                <input type="checkbox" name="transport" id="transport-1" class="form-check-input">
+                                <label for="transport-1" class="form-check-label ps-2 m-0 w-100"> School Bus </label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-4">
+                        <div class="border rounded-2 shadow-sm mb-3">
+                            <div class="d-flex p-2">
+                                <input type="checkbox" name="transport" id="transport-2" class="form-check-input">
+                                <label for="transport-2" class="form-check-label ps-2 m-0 w-100"> Cycle </label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-4">
+                        <div class="border rounded-2 shadow-sm mb-3">
+                            <div class="d-flex p-2">
+                                <input type="checkbox" name="transport" id="transport-3" class="form-check-input">
+                                <label for="transport-3" class="form-check-label ps-2 m-0 w-100"> Private Vehicle </label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-4">
+                        <div class="border rounded-2 shadow-sm mb-3">
+                            <div class="d-flex p-2">
+                                <input type="checkbox" name="transport" id="transport-4" class="form-check-input">
+                                <label for="transport-4" class="form-check-label ps-2 m-0 w-100"> Public Transport
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-4">
+                        <div class="border rounded-2 shadow-sm mb-3">
+                            <div class="d-flex p-2">
+                                <input type="checkbox" name="transport" id="transport-5" class="form-check-input">
+                                <label for="transport-5" class="form-check-label ps-2 m-0 w-100"> Walk
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="d-flex justify-content-between p-3 border-top">
+        <button class="btn btn-sm rounded-pill border-secondary px-4 text-secondary fw-semibold" (click)="onPre()">
+            Previous </button>
+        <button class="btn btn-primary btn-sm rounded-pill px-4 text-white fw-semibold" (click)="onNext()"> Submit
+        </button>
+    </div>
+</form>

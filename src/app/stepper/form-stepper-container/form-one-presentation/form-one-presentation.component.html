@@ -1,0 +1,68 @@
+<form class="d-flex flex-column justify-content-between">
+    <div class="p-4 form-container">
+        <div class="row">
+            <div class="col-12">
+                <div class="mb-3">
+                    <label for="schoolName" class="form-label"> Name </label>
+                    <input type="text" name="schoolName" id="schoolName" class="form-control"
+                        placeholder="Enter School Name">
+                </div>
+            </div>
+            <div class="col-6">
+                <div class="mb-3">
+                    <label for="schoolMail" class="form-label"> Email </label>
+                    <input type="email" name="schoolMail" id="schoolMail" class="form-control"
+                    placeholder="Enter Email Address">
+                </div>
+            </div>
+            <div class="col-6">
+                <div class="mb-3">
+                    <label for="schoolPhone" class="form-label"> Phone Number </label>
+                    <input type="tel" name="schoolPhone" id="schoolPhone" class="form-control"
+                    placeholder="Enter Phone Number">
+                </div>
+            </div>
+            <div class="col-12">
+                <div class="mb-3">
+                    <label for="schoolAddress" class="form-label"> School Address </label>
+                    <input type="text" name="schoolAddress" id="schoolAddress" class="form-control"
+                    placeholder="Enter Address">
+                </div>
+            </div>
+            <div class="col-6">
+                <div class="mb-3">
+                    <label for="state" class="form-label"> State </label>
+                    <select class="form-select" aria-label="Default select example">
+                        <option value="1">Gujarat</option>
+                        <option value="2">Rajasthan</option>
+                        <option value="3">Maharastra</option>
+                        <option value="4">Goa</option>
+                        <option value="5">J & K</option>
+                    </select>
+                </div>
+            </div>
+            <div class="col-6">
+                <div class="mb-3">
+                    <label for="city" class="form-label"> City </label>
+                    <select class="form-select" aria-label="Default select example">
+                        <option value="1">Valsad</option>
+                        <option value="2">Surat</option>
+                        <option value="3">Navsari</option>
+                        <option value="4">Daman</option>
+                        <option value="5">Ahemdabad</option>
+                    </select>
+                </div>
+            </div>
+            <div class="col-6">
+                <div class="mb-3">
+                    <label for="pincode" class="form-label"> Pincode </label>
+                    <input type="number" name="pincode" id="pincode" class="form-control"
+                    placeholder="Enter Pincode">
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="d-flex justify-content-end p-3 border-top">
+        <button class="btn btn-primary btn-sm rounded-pill px-4 text-white" (click)="onNext()"> Next </button>
+    </div>
+</form>
