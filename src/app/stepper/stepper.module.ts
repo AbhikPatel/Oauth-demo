@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
+import { ReactiveFormsModule } from '@angular/forms';
 
 import { StepperRoutingModule } from './stepper-routing.module';
 import { StepperComponent } from './stepper.component';
@@ -19,7 +20,8 @@ import { FormThreePresentationComponent } from './form-stepper-container/form-th
   ],
   imports: [
     CommonModule,
-    StepperRoutingModule
+    StepperRoutingModule,
+    ReactiveFormsModule
   ]
 })
 export class StepperModule { }

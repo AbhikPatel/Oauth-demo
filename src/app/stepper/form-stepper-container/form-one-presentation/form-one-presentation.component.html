@@ -1,18 +1,18 @@
-<form class="d-flex flex-column justify-content-between">
+<form [formGroup]="oneGroup" class="d-flex flex-column justify-content-between">
     <div class="p-4 form-container">
         <div class="row">
             <div class="col-12">
                 <div class="mb-3">
                     <label for="schoolName" class="form-label"> Name </label>
                     <input type="text" name="schoolName" id="schoolName" class="form-control"
-                        placeholder="Enter School Name">
+                        placeholder="Enter School Name" formControlName="schoolName">
                 </div>
             </div>
             <div class="col-6">
                 <div class="mb-3">
                     <label for="schoolMail" class="form-label"> Email </label>
                     <input type="email" name="schoolMail" id="schoolMail" class="form-control"
-                    placeholder="Enter Email Address">
+                    placeholder="Enter Email Address" formControlName="schoolMail">
                 </div>
             </div>
             <div class="col-6">
@@ -63,6 +63,6 @@
         </div>
     </div>
     <div class="d-flex justify-content-end p-3 border-top">
-        <button class="btn btn-primary btn-sm rounded-pill px-4 text-white" (click)="onNext()"> Next </button>
+        <button class="btn btn-primary btn-sm rounded-pill px-4 text-white" type="submit" (click)="onNext()"> Next </button>
     </div>
 </form>
